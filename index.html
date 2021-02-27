@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+    <title>Luas Catering</title>
+    <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+    <link rel="icon" type="image/png" href="imgs/hambuger.png">
+    <link rel="stylesheet" href="style/app.css">
+    <script src="js/app.js" defer></script>
+</head>
+
+<body>
+    <div class="backdrop"></div>
+    <div class="correct-send-form">
+        <h3>Success.<br> Your message has been sent, thanks!</h3>
+        <button class="close-alert">CLOSE</button>
+    </div>
+    <div class = "selected-offer-alert">
+        <h3>Perfect !<br> Are you sure you want to order this option?</h3>
+        <button class="selected-offer__confirm">Yes</button>
+        <button class="selected-offer__decline">Cancel</button>
+    </div>
+    <div class="mobile-menu">
+        <button class="mobile-exit__btn" id="mobileNavExitBtn">x</button>
+        <ul class="mobile-list">
+            <a>
+                <li class="mobile-list-item about-us-btn">About us</li>
+            </a>
+            <a>
+                <li class="mobile-list-item highlighted our-offer-btn">Our Offer</li>
+            </a>
+            <a>
+                <li class="mobile-list-item contact-btn">Contact</li>
+            </a>
+            <a href=  "loginPage.html">
+                <li class="mobile-list__icons higher__icon login-btn">
+                    Login<img class = "mobile-list__icon" src = "imgs/login.png">
+                </li>
+            </a>
+            <!-- <a>
+                <li class="mobile-list__icons">
+                    Logout<img class = "mobile-list__icon" src = "imgs/powerbutton.png">
+                </li>
+            </a> -->
+        </ul>
+        <h3 class = "mobile-menu__footer-text">Copyrights by Łukasz Wolsza </h3>
+    </div>
+    <header>
+        <div class="main-title">
+            <button id="mobileMenu" class="mobile-navbar">
+                <span class="mobile-navbar__bar"></span>
+                <span class="mobile-navbar__bar"></span>
+                <span class="mobile-navbar__bar"></span>
+            </button>
+            <h1 class="main-title__text"><span class="first-title-part">ur</span><span
+                    class="second-title-part">HealtyDiet</span></h1>
+        </div>
+        <div class="menu">
+            <ul>
+                <a>
+                    <li class="list-item about-us-btn">About us</li>
+                </a>
+                <a>
+                    <li class="list-item hglight our-offer-btn">Our Offer</li>
+                </a>
+                <a>
+                    <li class="list-item contact-btn">Contact</li>
+                </a>
+                <a class = "menu-loginhref" href= "loginPage.html">
+                    <li class="list-item login-btn">
+                        Login<img class = "mobile-list__icon" src = "imgs/login.png">
+                    </li>
+                </a>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <div id="changeImage" class="bg-image"></div>
+        <div id="aboutUs" class="bg-text">
+            <h1>How do we work?</h1>
+            <div class="row">
+                <div class="steps">
+                    <img class="step-icon" src="imgs/phone.png">
+                    <h3>Step 1. Fill the form and order diet that's fits you.</h3>
+                </div>
+                <div class="steps">
+                    <img class="step-icon" src="imgs/cooking.png">
+                    <h3>Step 2. We prepare your meals, keep it fresh in special container.</h3>
+                </div>
+                <div class="steps">
+                    <img class="step-icon" src="imgs/deliver.png">
+                    <h3>Step 3. Deliver them in bags at your door.</h3>
+                </div>
+                <div class="steps">
+                    <img class="step-icon" src="imgs/eat.png">
+                    <h3>Step 4. You eat delicous meals and stick to your calories.</h3>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <section class="offers-section">
+        <div class="offers">
+            <h1>What we offer?</h1>
+            <div class="offer-box">
+                <h1>ONE MONTH</h1>
+                <h2 class="desc-cost">$300 / month</h2>
+                <article class="meals">
+                    <h2>Includes:</h2>
+                    <ul class="list-of-meal">
+                        <li>Breakfast</li>
+                        <li>Second Breakfast</li>
+                        <li>Dinner</li>
+                        <li>Supper</li>
+                    </ul>
+                    <button class="order-button">Order !</button>
+                </article>
+            </div>
+            <div class="offer-box recommended">
+                <h1 class="recommended-highlight">RECOMMENDED</h1>
+                <h1>THREE MONTHS</h1>
+                <h2 class="desc-cost">$700 / month</h2>
+                <article class="meals">
+                    <h2>Includes:</h2>
+                    <ul class="list-of-meal">
+                        <li>Breakfast</li>
+                        <li>Second Breakfast</li>
+                        <li>Dinner</li>
+                        <li>Snack</li>
+                        <li>Supper</li>
+                    </ul>
+
+                    <button class="order-button">Order !</button>
+                </article>
+            </div>
+            <div class="offer-box">
+                <h1>Third</h1>
+                <h2 class="desc-cost">$3200 / month</h2>
+                <article class="meals">
+                    <h2>Includes:</h2>
+                    <ul class="list-of-meal">
+                        <li>Breakfast</li>
+                        <li>Second Breakfast</li>
+                        <li>Dinner</li>
+                        <li>Supper</li>
+                    </ul>
+                    <button class="order-button">Order !</button>
+                </article>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="contact">
+            <h2 class="contact__header">Contact us</h2>
+            <div class="contact-form">
+                <input class="contact-form__inputs user-inputs" type="text" placeholder="Name">
+                <input class="contact-form__inputs user-inputs" type="text" placeholder="Email">
+                <input class="contact-form__textarea user-inputs" type="text" placeholder="Message">
+                <button class="contact-form_button">Send</button>
+            </div>
+            <hr>
+            <div class=" links">
+                <img class="link-icon" src="imgs/facebook (1).png">
+                <img class="link-icon" src="imgs/instagram.png">
+                <img class="link-icon" src="imgs/twitter.png">
+                <img class="link-icon" src="imgs/youtube.png">
+            </div>
+
+            <div>Icons made by <a href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect">Pixel
+                    perfect</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+        </div>
+    </section>
+    <div class = "slider-up">
+        <i class="arrow-up"></i>
+    </div>
+</body>
+
+</html>
